@@ -84,6 +84,7 @@ ul {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -97,7 +98,6 @@ ul {
   letter-spacing: 0.02em;
 }
 .feature-list .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -165,8 +165,29 @@ footer {
 .filter-item {
   background-color: var(--second-background-color);
   color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 .filter-item:hover,
 .filter-item:focus {
   color: var(--accent-color);
+}
+.filter-item {
+    cursor: pointer;
+}
+.works-item h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.works-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
