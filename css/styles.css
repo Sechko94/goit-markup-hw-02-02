@@ -1,62 +1,160 @@
-body {
-    font-family: 'Roboto',sans-serif;
-
+:root {
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --first-background-color: #ffffff;
+  --second-background-color: #f4f4fd;
+  --third-background-color: #e5e5e5;
+  --accent-color: #4d5ae5;
+  --footer-text-color: #e7e9fc;
 }
+body {
+  color: var(--primary-text-color);
+  background-color: var(--first-main-background-color);
+  font-family: "Roboto", sans-serif;
+}
+
 /* ЛОГОТИП */
 .logo {
-font-family: 'Raleway',sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.33px;
-text-transform: uppercase;
-color: #4D5AE5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33px;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 span {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 18px;
-line-height: 1.33;
-text-transform: uppercase;
-color: #2E2F42 ;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--accent-color);
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-/* НАВИГАЦИЯ */
-.site-nav a {
-    color: #2E2F42;
+ul {
+  list-style: none;
 }
-.site-nav a:hover {
-    color: #4D5AE5;
+/* SITE-NAV */
+.site-nav .link {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-.site-nav a:focus {
-    color: #4D5AE5;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
-.site-nav a:active {
-    color: #434455;
+.site-nav .link.current {
+  color: var(--accent-color);
 }
+
+/* AUTH-NAV */
 .auth-nav a {
-    color: #2E2F42;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-.auth-nav a:hover {
-    color: #4D5AE5;
-}
+.auth-nav a:hover,
 .auth-nav a:focus {
-    color: #4D5AE5;
+  color: var(--accent-color);
 }
-.auth-nav a:active {
-    color: #434455;
+
+/* HERO */
+.hero {
+  background-color: var(--secondary-text-color);
 }
-/* РЕШЕНИЯ  */
-.order-button {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-
+.hero-title {
+  color: var(--first-background-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
-.order-button:hover, .order-button:focus{
-    background-color: #404BBF;
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--first-background-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
 }
-    
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+/* ADVANTAGES */
+.feature-list h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.feature-list .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
+.section-offer .section-title {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.section-advantages {
+  background-color: var(--third-background-color);
+}
+.section-team {
+  background-color: var(--second-background-color);
+}
+.section-team .section-title {
+    font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+/* FOOTER */
+footer {
+  background-color: var(--secondary-text-color);
+}
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33px;
+  text-transform: uppercase;
+  color: var(--second-background-color);
+}
+.tagline {
+  color: var(--footer-text-color);
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
 
-
+/* PORTFOLIO */
+.portfolio {
+  background-color: #e5e5e5;
+}
+.filter-item {
+  background-color: var(--second-background-color);
+  color: var(--accent-color);
+}
+.filter-item:hover,
+.filter-item:focus {
+  color: var(--accent-color);
+}
