@@ -6,10 +6,11 @@
   --third-background-color: #e5e5e5;
   --accent-color: #4d5ae5;
   --footer-text-color: #e7e9fc;
+  --hover-button-color: #404bbf;
 }
 body {
   color: var(--primary-text-color);
-  background-color: var(--first-main-background-color);
+  background-color: var(--first-background-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -78,6 +79,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .hero-button {
+  font-family: "Roboto", sans-serif;
   background-color: var(--accent-color);
   color: var(--first-background-color);
   font-weight: 600;
@@ -86,13 +88,14 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color);
+.hero-button:hover {
+  background-color: var(--hover-button-color);
 }
+
 /* ADVANTAGES */
 .feature-list h3 {
   font-weight: 600;
+  color: var(--secondary-text-color);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -102,8 +105,23 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
-.section-offer .section-title {
+.section-team {
+  background-color: var(--second-background-color);
+}
+.section-title {
   color: var(--secondary-text-color);
   font-weight: 600;
   font-size: 36px;
@@ -112,21 +130,8 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.section-advantages {
-  background-color: var(--third-background-color);
-}
-.section-team {
-  background-color: var(--second-background-color);
-}
-.section-team .section-title {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
 .name {
+  color: var(--secondary-text-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -159,12 +164,11 @@ footer {
 }
 
 /* PORTFOLIO */
-.portfolio {
-  background-color: #e5e5e5;
-}
+
 .filter-item {
   background-color: var(--second-background-color);
   color: var(--accent-color);
+  font-family: 'Roboto',sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -175,18 +179,21 @@ footer {
 }
 .filter-item:hover,
 .filter-item:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--first-background-color);
 }
 .filter-item {
-    cursor: pointer;
+  cursor: pointer;
 }
-.works-item h3 {
+.works-item h2 {
+  color: var(--secondary-text-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .works-item p {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
