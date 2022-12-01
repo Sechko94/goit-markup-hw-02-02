@@ -88,7 +88,8 @@ ul {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--hover-button-color);
 }
 
@@ -117,9 +118,12 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/* TEAM */
 .section-team {
   background-color: var(--second-background-color);
+}
+.team-list li {
+  background-color: var(--first-background-color);
 }
 .section-title {
   color: var(--secondary-text-color);
